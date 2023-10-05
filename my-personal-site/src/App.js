@@ -7,6 +7,7 @@ import Resume from './components/Resume';
 import Contact from './components/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import './App.css';
 
 const App = () => {
   return (
