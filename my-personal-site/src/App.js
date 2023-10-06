@@ -4,6 +4,7 @@ import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Footer from './components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
@@ -44,6 +45,7 @@ const App = () => {
       <div id="portfolio"><Portfolio /></div>
       <div id="resume"><Resume /></div>
       <div id="contact"><Contact /></div>
+      <Footer />
     </div>
   );
 };
