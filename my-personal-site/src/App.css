@@ -41,14 +41,14 @@ body {
   background-color: #f0f0f0;
   display: flex;
   min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 20px;
   background-color: #f9f9f9;
   margin: 0;
 }
 .home-background {
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   height: 100vh;
   display: flex;
@@ -56,16 +56,12 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  min-width: 100vw;
 }
 
 .content {
   text-align: center;
 }
-
-.content h1 {
-}
-
-
 
 nav {
   position: fixed;
@@ -78,6 +74,7 @@ nav {
   align-items: center;
   padding: 0px;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 nav a {

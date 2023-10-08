@@ -32,7 +32,7 @@ const App = () => {
     <div className="App">
       <nav>
         <a href="#home" className={activeSection === 'home' ? 'active' : ''}>
-          <FontAwesomeIcon icon={faHome} /> Home
+          <FontAwesomeIcon icon={faHome} />
         </a>
         <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About Me</a>
         <a href="#portfolio" className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
