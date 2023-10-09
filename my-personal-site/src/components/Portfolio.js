@@ -1,10 +1,27 @@
 import React from 'react';
+import '../App.css';
+import projects from './projectsData';
 
 const Portfolio = () => {
     return (
-        <div>
-            <h1>Portfolio</h1>
-            <p>Hello</p>
+        <div className="portfolio-container">
+            <h1>My Portfolio</h1>
+            <div className="projects">
+                {projects.map((project, index) => (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" key={index} className="project-link">
+                        <div className="project">
+                            <h2>{project.title}</h2>
+                            <div className="project-box">
+                            </div>
+                            <ul>
+                                {project.description.map((item, index) => (
+                                    <li key={index}>{item}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </a>
+                ))}
+            </div>
         </div>
     );
 }
