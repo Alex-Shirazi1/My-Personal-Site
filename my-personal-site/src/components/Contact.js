@@ -7,7 +7,7 @@ import '../App.css';
 const Contact = () => {
     return (
         <div className="contact-container">
-            <h2 className='section-title'>Let's Connect!</h2>
+            <h2 className='section-title'>Platforms</h2>
             <div className="contact-icons">
             <div className="icon-item email-icon-item">
                  <FontAwesomeIcon icon={faEnvelope} size="4x" className="icon email" />

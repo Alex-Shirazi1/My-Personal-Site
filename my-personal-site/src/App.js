@@ -43,7 +43,7 @@ const App = () => {
         </a>
         <a onClick={() => scrollToElement('about')} className={activeSection === 'about' ? 'active' : ''}>About Me</a>
         <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
-        <a onClick={() => scrollToElement('resume')} className={activeSection === 'resume' ? 'active' : ''}>Resume</a>
+        <a onClick={() => scrollToElement('resume')} className={activeSection === 'resume' ? 'active' : ''}>Experience</a>
       </nav>
 
 
