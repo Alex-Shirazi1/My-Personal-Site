@@ -22,6 +22,14 @@ const App = () => {
     setActiveSection(currentSection || 'home');
   };
 
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -30,13 +38,14 @@ const App = () => {
   return (
     <div className="App">
       <nav>
-        <a href="#home" className={activeSection === 'home' ? 'active' : ''}>
+        <a onClick={() => scrollToElement('home')} className={activeSection === 'home' ? 'active' : ''}>
           <FontAwesomeIcon icon={faHome} />
         </a>
-        <a href="#about" className={activeSection === 'about' ? 'active' : ''}>About Me</a>
-        <a href="#portfolio" className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
-        <a href="#resume" className={activeSection === 'resume' ? 'active' : ''}>Resume</a>
+        <a onClick={() => scrollToElement('about')} className={activeSection === 'about' ? 'active' : ''}>About Me</a>
+        <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
+        <a onClick={() => scrollToElement('resume')} className={activeSection === 'resume' ? 'active' : ''}>Resume</a>
       </nav>
+
 
       <div id="home"><Home /></div>
       <div id="about"><AboutMe /></div>
