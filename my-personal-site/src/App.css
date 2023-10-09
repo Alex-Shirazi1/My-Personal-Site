@@ -323,3 +323,49 @@ h2 {
   text-align: left;
   line-height: 2;
 }
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.experience {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 60%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.experience-info {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: -60px;
+}
+
+.experience-tasks {
+  text-align: left;
+  padding-left: 0;
+}
+
+.experience-tasks li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.page-title {
+  color: #495057;
+}
