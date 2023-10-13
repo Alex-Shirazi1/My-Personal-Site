@@ -12,14 +12,14 @@ const App = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = () => {
-    const sections = ['home', 'about', 'portfolio', 'resume'];
+    const sections = ['about', 'resume', 'portfolio'];
     const scrollY = window.scrollY + window.innerHeight / 2;
     const currentSection = sections.reverse().find(section => {
       const element = document.getElementById(section);
       return element.offsetTop <= scrollY;
     });
 
-    setActiveSection(currentSection || 'home');
+    setActiveSection(currentSection || 'about');
   };
 
   const scrollToElement = (id) => {
@@ -40,14 +40,16 @@ const App = () => {
       <nav>
 
         <a onClick={() => scrollToElement('about')} className={activeSection === 'about' ? 'active' : ''}>About Me</a>
-        <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
+      
         <a onClick={() => scrollToElement('resume')} className={activeSection === 'resume' ? 'active' : ''}>Experience</a>
+        <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
       </nav>
 
 
       <div id="about"><AboutMe /></div>
-      <div id="portfolio"><Portfolio /></div>
+
       <div id="resume"><Resume /></div>
+      <div id="portfolio"><Portfolio /></div>
       <Footer />
     </div>
   );

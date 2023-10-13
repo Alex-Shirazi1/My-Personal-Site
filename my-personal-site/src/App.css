@@ -120,7 +120,7 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.contact-container {
+.contact-container, .resume-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,7 +133,7 @@ h2 {
   color: #333;
 }
 
-.contact-icons {
+.contact-icons, .resume-icon {
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -165,7 +165,7 @@ h2 {
   color: black;
 }
 
-.email {
+.email, .download {
   color: #555;
 }
 
@@ -231,6 +231,11 @@ h2 {
   text-align: left;
   color: #495057;
   margin-bottom: 20px;
+}
+
+.cv-title {
+  color: #495057;
+  text-align: center;
 }
 
 .bio, .skills-list {
