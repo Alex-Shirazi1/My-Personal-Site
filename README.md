@@ -2,4 +2,6 @@
 
 Deployed at http://alex-shirazi.com/
 
-using aws for hosting
+Hosted on AWS platform via an EC2 Instance
+
+
