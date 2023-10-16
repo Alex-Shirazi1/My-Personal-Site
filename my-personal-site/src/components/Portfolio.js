@@ -5,7 +5,7 @@ import projects from './projectsData';
 const Portfolio = () => {
     return (
         <div className="portfolio-container">
-
+            <br />
             <h1 className="page-title" >My Portfolio</h1>
             <br />
             <div className="projects">
