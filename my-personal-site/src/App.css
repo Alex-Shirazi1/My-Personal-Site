@@ -374,3 +374,38 @@ h2 {
 .page-title {
   color: #495057;
 }
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+
+  nav a {
+      padding: 15px;
+  }
+
+  .icon-item {
+      margin: 15px 0;
+  }
+
+  body {
+      max-width: 100%;
+      overflow-x: hidden;
+  }
+
+  .home-background, .content {
+      max-width: 100%;
+  }
+
+  .content {
+      margin-top: 60px; 
+  }
+
+  .projects {
+      grid-template-columns: 1fr;
+      gap: 20px; 
+  }
+
+  .project-link {
+      display: block;
+  }
+}
