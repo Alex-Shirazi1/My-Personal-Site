@@ -378,7 +378,9 @@ h2 {
   body {
       font-size: 16px;
   }
-
+  nav {
+    font-size: 1rem;
+  }
   nav a {
       padding: 15px;
   }
