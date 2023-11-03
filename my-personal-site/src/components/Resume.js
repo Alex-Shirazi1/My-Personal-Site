@@ -3,10 +3,10 @@ import '../App.css';
 import experiences from './Experience';
 
 const Resume = () => {
-   
+
     return (
         <div className="experience-container">
-             <br />
+            <br />
             <h1 className="page-title" >My Experience</h1>
             {experiences.map((exp, index) => (
                 <div className="experience" key={index}>

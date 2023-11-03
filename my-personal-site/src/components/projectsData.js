@@ -43,7 +43,7 @@ const projects = [
             "A collaborative project at SFSU, integrating C# for game logic and Java for multiplayer services.",
             "Boasts two intricately designed maps, an intuitive user interface, and engaging game mechanics, offering an unparalleled gaming experience."
         ]
-        
+
     },
     {
         title: "RoomFinder",
@@ -53,7 +53,7 @@ const projects = [
             "A collaborative project at SFSU, harmoniously combining the capabilities of React for the frontend and Express for the backend, all tied together with a MySQL database.",
             "Equipped with a real-time chat feature for seamless communication, custom interactive maps to visualize room locations, and an intuitive posts feature."
         ]
-        
+
     }
 ];
 

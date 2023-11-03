@@ -2,14 +2,18 @@ import React, { useEffect, useState } from 'react';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 const App = () => {
+
   const [activeSection, setActiveSection] = useState('home');
+  const [isProfileOpen, setIsProfileOpen] = useState(false);
+
 
   const handleScroll = () => {
     const sections = ['about', 'resume', 'portfolio'];
@@ -29,6 +33,9 @@ const App = () => {
     }
   };
 
+  const toggleProfile = () => {
+    setIsProfileOpen(!isProfileOpen);
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -38,16 +45,22 @@ const App = () => {
   return (
     <div className="App">
       <nav>
-
+        <a onClick={toggleProfile} className="profile-symbol">
+        <FontAwesomeIcon icon={faBars}/>
+        </a>
         <a onClick={() => scrollToElement('about')} className={activeSection === 'about' ? 'active' : ''}>About Me</a>
-      
+
         <a onClick={() => scrollToElement('resume')} className={activeSection === 'resume' ? 'active' : ''}>Experience</a>
         <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
       </nav>
 
+      <div id="about">
+        <div className={`profile-slide ${isProfileOpen ? 'open' : ''}`}>
+          <Contact />
+        </div>
+      </div>
 
       <div id="about"><AboutMe /></div>
-
       <div id="resume"><Resume /></div>
       <div id="portfolio"><Portfolio /></div>
       <Footer />

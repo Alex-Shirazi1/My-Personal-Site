@@ -6,10 +6,9 @@ const AboutMe = () => {
     return (
         <div className="about-container">
             <div className="profile-section">
-                <div className="image-container">
-                    <img src="/profile.jpeg" alt="Profile" className="profile-image" />
+                <div className="contact-mobile-hidden">
+                    <Contact />
                 </div>
-                <Contact />
             </div>
             <div className="info-section">
                 <div className="bio-section">
@@ -20,7 +19,6 @@ const AboutMe = () => {
                     <p className="bio">
                         I believe in lifelong learning and am always looking to improve and adapt my skills. The tech world is always changing, and I’m passionate about keeping up with new trends and innovations. Each challenge is a chance to learn and grow, and every project is an opportunity to create useful and effective digital solutions. As I step into my professional career, my aim is to contribute to projects that combine latest technology with positive impacts for users and communities. I’m excited about the blend of technology, innovation, and problem-solving and look forward to the opportunities ahead.
                     </p>
-
 
                 </div>
                 <div className="skills-section">
