@@ -19,7 +19,7 @@ const projects = [
     },
     {
         title: "MySFSUProjects",
-        link: "https://github.com/Alex-Shirazi1/ComputerScienceProjectsSFSU",
+        link: "https://github.com/Alex-Shirazi1/MySFSUProjects",
         description: [
             "A compilation of projects completed during my time at San Francisco State University.",
             "Includes a versatile File System, a feature-rich Instagram clone, and a user-friendly listing app",
