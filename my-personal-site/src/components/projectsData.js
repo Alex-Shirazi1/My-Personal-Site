@@ -18,11 +18,11 @@ const projects = [
         ]
     },
     {
-        title: "ComputerScienceProjectsSFSU",
+        title: "MySFSUProjects",
         link: "https://github.com/Alex-Shirazi1/ComputerScienceProjectsSFSU",
         description: [
             "A compilation of projects completed during my time at San Francisco State University.",
-            "Includes a versatile File System, a feature-rich Instagram clone, a user-friendly listing app, and an innovative room finder application.",
+            "Includes a versatile File System, a feature-rich Instagram clone, and a user-friendly listing app",
             "Includes a series of individual and collaborative projects with fellow students."
         ]
     },
@@ -43,6 +43,17 @@ const projects = [
             "A collaborative project at SFSU, integrating C# for game logic and Java for multiplayer services.",
             "Boasts two intricately designed maps, an intuitive user interface, and engaging game mechanics, offering an unparalleled gaming experience."
         ]
+        
+    },
+    {
+        title: "RoomFinder",
+        link: "https://github.com/Alex-Shirazi1/RoomFinder",
+        description: [
+            "A full-fledged platform designed to assist college students in locating available rooms or potential roommates.",
+            "A collaborative project at SFSU, harmoniously combining the capabilities of React for the frontend and Express for the backend, all tied together with a MySQL database.",
+            "Equipped with a real-time chat feature for seamless communication, custom interactive maps to visualize room locations, and an intuitive posts feature."
+        ]
+        
     }
 ];
 
