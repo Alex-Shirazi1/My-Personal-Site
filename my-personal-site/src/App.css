@@ -61,6 +61,7 @@ body {
 }
 
 .content {
+  padding-top: 75px;
   text-align: center;
 }
 
@@ -440,8 +441,9 @@ h2 {
     padding-right: 0px;
     background-color: #f9f9f9;
   }
+
   .contact-component {
     padding-top: 75px;
-    height: 600px;
+    min-height: 800px;
   }
 }

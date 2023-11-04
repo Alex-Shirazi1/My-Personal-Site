@@ -54,7 +54,7 @@ const App = () => {
         <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
       </nav>
 
-      <div id="about">
+      <div className="contact-card">
         <div className={`profile-slide ${isProfileOpen ? 'open' : ''}`}>
           <Contact />
         </div>
