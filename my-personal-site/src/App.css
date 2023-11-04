@@ -57,7 +57,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  min-width: 100vw;
+  width: 100%;
 }
 
 .content {
@@ -299,7 +299,6 @@ h2 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   height: 350px;
-  overflow: auto;
 }
 
 .projects {
@@ -443,5 +442,6 @@ h2 {
   }
   .contact-component {
     padding-top: 75px;
+    height: 600px;
   }
 }
