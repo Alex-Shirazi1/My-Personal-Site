@@ -27,13 +27,13 @@ const AboutMe = () => {
                         <li>Swift</li>
                         <li>Java</li>
                         <li>JavaScript</li>
-                        <li>React</li>
+                        <li>React.js</li>
                         <li>TypeScript</li>
                         <li>Python</li>
                         <li>SQL</li>
                         <li>MongoDB</li>
                         <li>AWS</li>
-                        <li>node.js</li>
+                        <li>Node.js</li>
                     </ul>
                 </div>
             </div>
