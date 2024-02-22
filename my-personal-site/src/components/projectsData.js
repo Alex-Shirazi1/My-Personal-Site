@@ -1,5 +1,15 @@
 const projects = [
     {
+        title: "MapBlueprint",
+        link: "https://github.com/Alex-Shirazi1/MapBlueprint",
+        description: [
+            "Intuitive iOS map application with advanced route tracking functionality.",
+            "Incorporates live vehicle data through OBD2 for real-time diagnostics and status updates.",
+            "Offers Apple Watch support for vehicle data Complications"
+        ]
+    
+    },
+    {
         title: "Recipe-App",
         link: "https://github.com/Alex-Shirazi1/Recipe-App",
         description: [
@@ -24,15 +34,6 @@ const projects = [
             "A compilation of projects completed during my time at San Francisco State University.",
             "Includes a versatile File System, a feature-rich Instagram clone, and a user-friendly listing app",
             "Includes a series of individual and collaborative projects with fellow students."
-        ]
-    },
-    {
-        title: "IOS-Development",
-        link: "https://github.com/Alex-Shirazi1/Ios-Development",
-        description: [
-            "A collection of iOS applications exemplifying the uses of the VIPER architecture.",
-            "Highlights a simple contacts app, showcasing basic features and seamless user interaction.",
-            "Developed using Swift, ensuring optimal performance, security, and user experience."
         ]
     },
     {
