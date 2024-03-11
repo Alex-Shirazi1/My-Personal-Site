@@ -299,7 +299,8 @@ h2 {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  height: 350px;
+  min-height: 350px;
+  overflow: hidden;
 }
 
 .projects {
