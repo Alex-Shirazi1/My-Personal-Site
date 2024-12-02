@@ -4,7 +4,7 @@ import '../App.css'
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>© Copyright 2024 Alex Shirazi</p>
+            <p>© Copyright 2025 Alex Shirazi</p>
         </footer>
     );
 }
