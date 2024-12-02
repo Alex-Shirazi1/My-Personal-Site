@@ -2,15 +2,26 @@ const experiences = [
     {
         company: 'Apple',
         location: 'Cupertino, CA',
-        duration: 'Jan 2023 – June 2023',
+        duration: 'Jun 2024 – Nov 2024',
         role: 'iOS Engineer Intern, News client',
         logo: `${process.env.PUBLIC_URL}/apple-logo.png`,
         tasks: [
-            'Implemented an iOS feature for the News app that will be getting shipped in a future release',
-            'Developed the feature using Swift with Viper architecture design pattern',
-            'Did full cycle development working closely with Design, Product, Backend, and QA',
-            'Worked on end-to-end testing for the feature and did full QA handoff to the team',
-            'Demoed the feature to senior management and received great feedback about it'
+            'Developed Election and Liveblog live activities feature for News app using Swift which shipped in iOS 18.1.',
+            'Implemented notifications for state wins and electoral vote updates during the presidential race working closely with the backend team.',
+            'Delivered additional iOS features for the News app using Objective-C and Swift which is set for releases in future updates.',
+            'Presented feature demos to senior management and concluded the internship with QA handoffs.'
+        ]
+    },
+    {
+        company: 'Apple',
+        location: 'Cupertino, CA',
+        duration: 'Jan 2023 – Jun 2023',
+        role: 'iOS Engineer Intern, News client',
+        logo: `${process.env.PUBLIC_URL}/apple-logo.png`,
+        tasks: [
+            'Developed a better End of Article feature for the news app using Swift with Viper architecture which shipped in  iOS 17.4.',
+            'Completed full-cycle development working closely with Design, Product, Backend. and QA teams.',
+            'Conducted end-to-end testing for the feature and completed full QA handoff.'
         ]
     },
     {

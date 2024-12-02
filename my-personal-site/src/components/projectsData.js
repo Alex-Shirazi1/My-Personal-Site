@@ -3,7 +3,8 @@ const projects = [
         title: "MapBlueprint",
         link: "https://github.com/Alex-Shirazi1/MapBlueprint",
         description: [
-            "Intuitive iOS map application with advanced route tracking functionality.",
+            
+            "Engineered the app using UIKit, SwiftUI, and objective-C, ensuring seamless performance.",
             "Incorporates live vehicle data through OBD2 for real-time diagnostics and status updates.",
             "Offers Apple Watch support for vehicle data Complications"
         ]
