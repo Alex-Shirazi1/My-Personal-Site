@@ -2,8 +2,8 @@ const experiences = [
     {
         company: 'Apple',
         location: 'Cupertino, CA',
-        duration: 'Jun 2024 – Nov 2024',
-        role: 'iOS Engineer Intern, News client',
+        duration: 'Nov 2023 – Nov 2024',
+        role: 'iOS Engineer Contractor, News client',
         logo: `${process.env.PUBLIC_URL}/apple-logo.png`,
         tasks: [
             'Developed Election and Liveblog live activities feature for News app using Swift which shipped in iOS 18.1.',

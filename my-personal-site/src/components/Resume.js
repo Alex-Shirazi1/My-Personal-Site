@@ -1,14 +1,12 @@
 import React from 'react';
 import '../App.css';
-import experiences from './Experience';
 
-const Resume = () => {
-
+const Resume = ({ experience }) => {
     return (
         <div className="experience-container">
             <br />
-            <h1 className="page-title" >My Experience</h1>
-            {experiences.map((exp, index) => (
+            <h1 className="page-title">My Experience</h1>
+            {experience.map((exp, index) => (
                 <div className="experience" key={index}>
                     <div className="experience-header">
                         <img src={exp.logo} alt={exp.company} className="company-logo" />
@@ -27,6 +25,6 @@ const Resume = () => {
             ))}
         </div>
     );
-}
+};
 
 export default Resume;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
@@ -7,13 +8,25 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import experience from './components/Experience';
+import myExperience from './components/MyExperience';
+
 import './App.css';
 
 const App = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainApp />} />
+        <Route path="/home" element={<MainApp useMyExperience />} />
+      </Routes>
+    </Router>
+  );
+};
 
+const MainApp = ({ useMyExperience = false }) => {
   const [activeSection, setActiveSection] = useState('home');
   const [isProfileOpen, setIsProfileOpen] = useState(false);
-
 
   const handleScroll = () => {
     const sections = ['about', 'resume', 'portfolio'];
@@ -46,10 +59,9 @@ const App = () => {
     <div className="App">
       <nav>
         <a onClick={toggleProfile} className="profile-symbol">
-        <FontAwesomeIcon icon={faBars}/>
+          <FontAwesomeIcon icon={faBars}/>
         </a>
         <a onClick={() => scrollToElement('about')} className={activeSection === 'about' ? 'active' : ''}>About Me</a>
-
         <a onClick={() => scrollToElement('resume')} className={activeSection === 'resume' ? 'active' : ''}>Experience</a>
         <a onClick={() => scrollToElement('portfolio')} className={activeSection === 'portfolio' ? 'active' : ''}>Portfolio</a>
       </nav>
@@ -61,7 +73,7 @@ const App = () => {
       </div>
 
       <div id="about"><AboutMe /></div>
-      <div id="resume"><Resume /></div>
+      <div id="resume"><Resume experience={useMyExperience ? myExperience : experience} /></div>
       <div id="portfolio"><Portfolio /></div>
       <Footer />
     </div>
