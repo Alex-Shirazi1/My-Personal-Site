@@ -1,5 +1,18 @@
 const experiences = [
     {
+      company: 'RapidFort',
+      location: 'Sunnyvale, CA',
+      duration: 'Feb 2025 – Current',
+      role: 'Software Engineer Intern, Security Platform',
+      logo: `${process.env.PUBLIC_URL}/rapidfort.png`,
+      tasks: [
+        'Developed and optimized backend features for a container security platform.',
+        'Streamlined image scanning across Harbor, ECR, and ACR using Python and REST APIs.',
+        'Improved CI/CD pipelines to increase deployment speed and test coverage.',
+        'Worked closely with DevOps and Security teams to resolve infrastructure issues.'
+      ]
+    },
+    {
         company: 'Apple',
         location: 'Cupertino, CA',
         duration: 'Jun 2024 – Nov 2024',
